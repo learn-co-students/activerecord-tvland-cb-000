@@ -45,6 +45,7 @@ describe Character do
     # because each one returns an instance of that type of object
     malcolm.build_show(:name => "Firefly").build_network(:call_letters => "Fox")
     show = malcolm.show
+    $stderr.puts show.network
     expect(show.name).to eq("Firefly")
     expect(show.network.call_letters).to eq("Fox")
   end
