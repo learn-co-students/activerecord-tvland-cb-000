@@ -1,5 +1,5 @@
-class AddActorIdToCharacters < ActiveRecord::Migration
+class AddGenreToShow < ActiveRecord::Migration
   def change
-    add_column :characters, :actor_id, :integer
+    add_column :shows, :genre, :string
   end
 end
