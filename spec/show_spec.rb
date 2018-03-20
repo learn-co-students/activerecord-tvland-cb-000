@@ -5,7 +5,7 @@ describe Show do
 
   it "has data attributes" do
     #TODO: You'll need to create a new migration to add
-    #the necessary columns to the shows table
+    #the necessary columns to the shows table FCKER
     community = Show.create(:name => "Community", :day => "Thursday", :season => "Winter")
     expect(community.day).to eq("Thursday")
     expect(community.season).to eq("Winter")
