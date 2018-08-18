@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'spec_helper'
 
 describe "Actor" do
@@ -22,7 +23,7 @@ describe "Actor" do
     khaleesi = Character.new(:name => "Khaleesi")
     khaleesi.actor = emilia
     khaleesi.save
-
+    # binding.pry
     khaleesi.reload
     expect(emilia.characters).to include(khaleesi)
     expect(khaleesi.actor).to eq(emilia)
