@@ -24,3 +24,12 @@ namespace :db do
     Pry.start
   end
 end
+
+task :console do
+  def reload!
+    load_all 'app'
+  end
+
+  Pry.start
+end
+# end
