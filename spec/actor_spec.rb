@@ -1,11 +1,11 @@
 require_relative 'spec_helper'
+require 'pry'
 
 describe "Actor" do
   let(:actor) {Actor.new}
 
   it "has a first and last name" do
     actor = Actor.create(:first_name => "Emilia", :last_name => "Clarke")
-
     expect(actor.first_name).to eq("Emilia")
     expect(actor.last_name).to eq("Clarke")
   end
